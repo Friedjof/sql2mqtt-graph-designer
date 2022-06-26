@@ -1,0 +1,16 @@
+[sql-config]
+host=example.com
+username=username
+password=password
+database=database
+query=query.sql
+
+[mqtt]
+host=example.com
+port=1883
+username=username
+password=password
+userid=GraphDesignerDev
+
+trigger=trigger/topic
+post=post/topic
