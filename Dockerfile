@@ -10,6 +10,6 @@ COPY . /app
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
 # run daemon
-CMD [ "python", "./influx2mqtt-graph-designer.py" ]
+CMD [ "python", "./sql2mqtt-graph-designer.py" ]
 
 # EOF

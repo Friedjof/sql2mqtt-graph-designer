@@ -1,11 +1,11 @@
 version: '3'
 
 services:
-  adguard2influxdb:
+  designer:
       build:
           context: .
           dockerfile: Dockerfile
-      container_name: influx2mqtt-graph-designer
+      container_name: sql2mqtt-graph-designer
       network_mode: host
       restart: unless-stopped
       volumes:

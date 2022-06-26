@@ -1,6 +1,6 @@
 
 [Unit]
-Description=Influx to MQTT Graph Designer
+Description=SQL to MQTT Graph Designer
 Wants=network-online.target
 After=network-online.target
 
@@ -8,11 +8,11 @@ After=network-online.target
 Type=simple
 User=nobody
 Group=nogroup
-WorkingDirectory=/opt/influx2mqtt-graph-designer
-ExecStart=/opt/influx2mqtt-graph-designer/.venv/bin/python /opt/influx2mqtt-graph-designer/influx2mqtt-graph-designer.py -d
+WorkingDirectory=/opt/sql2mqtt-graph-designer
+ExecStart=/opt/sql2mqtt-graph-designer/.venv/bin/python /opt/sql2mqtt-graph-designer/sql2mqtt-graph-designer.py -d
 StandardOutput=syslog
 StandardError=syslog
-SyslogIdentifier=influx2mqtt-graph-designer
+SyslogIdentifier=sql2mqtt-graph-designer
 RemainAfterExit=no
 Restart=always
 RestartSec=5s
